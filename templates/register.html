@@ -1,0 +1,27 @@
+{% extends 'home.html' %}
+{% block content %}
+<div class="container col-md-6 offset-3 pt-3 ">
+	
+	<div class="border bg-primary">
+	<center><b><h1 class="text-light">RegistrationForm</h1><b></center>	
+	<form action="{{url_for('register')}}" method="POST" class="m-5">
+	
+	<div class="form-group">
+		<label for="name">Name:</label>
+		<input type="text" class="form-control" name="name" placeholder="Enter your Name" id="name" required="required">
+	</div>
+	<div class="form-group">
+		<label for="email">Email:</label>
+		<input type="email" class="form-control" name="email" placeholder="Enter your Email" id="email" required="required">
+	</div>
+	<div class="form-group">
+		<label for="password">Password:</label>
+		<input type="password" class="form-control" name="password" required placeholder="Enter Password"  id="password"required="
+		required">
+	</div>
+
+	<input type="submit" value="register" class="btn btn-success btn-block">
+	</form>
+	</div>
+</div>
+{% endblock %}
